@@ -1,4 +1,5 @@
-FROM docker:20.10-dind
+# https://hub.docker.com/_/docker/tags?page=1&page_size=&ordering=&name=-dind%20
+FROM docker:26.0.1-dind
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -7,8 +8,11 @@ ARG VERSION
 ARG TARGETPLATFORM
 ARG TARGETARCH
 
-ARG TERRAFORM_VERSION=1.6.2
-ARG DOCKER_BUILDX_VERSION=0.11.2
+# https://github.com/hashicorp/terraform/tags
+ARG TERRAFORM_VERSION=1.8.0
+
+# https://github.com/docker/buildx/releases
+ARG DOCKER_BUILDX_VERSION=0.13.1
 
 LABEL maintainer="hello@mazzotta.me" \
     org.label-schema.build-date=$BUILD_DATE \
