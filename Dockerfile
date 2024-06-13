@@ -9,10 +9,10 @@ ARG TARGETPLATFORM
 ARG TARGETARCH
 
 # https://github.com/hashicorp/terraform/tags
-ARG TERRAFORM_VERSION=1.8.0
+ARG TERRAFORM_VERSION=1.8.5
 
 # https://github.com/docker/buildx/releases
-ARG DOCKER_BUILDX_VERSION=0.13.1
+ARG DOCKER_BUILDX_VERSION=0.15.0
 
 LABEL maintainer="hello@mazzotta.me" \
     org.label-schema.build-date=$BUILD_DATE \
