@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/docker/tags?page=1&page_size=&ordering=&name=-dind%20
-FROM docker:29.9.3-dind
+FROM docker:29.10.0-dind
 
 ARG BUILD_DATE
 ARG VCS_REF
